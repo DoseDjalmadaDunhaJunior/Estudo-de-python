@@ -144,5 +144,17 @@ print(tupla)
 print(type(tupla))
 
 print("=====================")
-
-
+#copiar uma lista a outra
+#copy
+nova = lista1.copy();
+print(nova)
+nova.append(-1)
+print(lista1)
+print(nova)
+print("=====================")
+#shallow copy
+nova = lista1
+print(nova)
+nova.append(-1)
+print(nova)
+print(lista1)
