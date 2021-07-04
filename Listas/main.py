@@ -104,3 +104,45 @@ print(vet[-1]) #negativo
 print("=====================")
 for indice, i in enumerate(vet):
     print(indice,i)
+
+# descobrir o indice em uma lista, porem ele pega apenas o 1º
+print("=====================")
+vet = [1,56,8,7,5,8,24,3,5434,5]
+print(vet.index(5)) # busca o valor 5
+# caso queira descobrir apartir de um numero especifico
+print(vet.index(5,(vet.index(5)+1)))
+print(vet.index(5,6)) # busca o valor 5 a partir da posição 6
+
+#podemos procurar em um limite tambem
+print(vet.index(5,2,8)) # busca o numero 5 entre a posição 2 e 8
+
+print("=====================")
+#slicing
+#lista[inicio:fim:passo]
+
+lista1 = [1,2,3,4]
+print(lista1[1::]) # inicia do indice 1 até o final
+
+print("=====================")
+
+#soma do valor maximo com o valor minimo
+
+lista1 = [1,2,3,4,5,6,7,8,9]
+
+print(sum(lista1))
+print(max(lista1))
+print(min(lista1))
+print(len(lista1))
+
+print("=====================")
+#transformar lista em tupla
+
+print(lista1)
+print(type(lista1))
+tupla = tuple(lista1)
+print(tupla)
+print(type(tupla))
+
+print("=====================")
+
+
